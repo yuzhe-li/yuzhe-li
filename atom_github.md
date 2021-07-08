@@ -42,8 +42,36 @@ git remote add origin  <REMOTE_URL>
 git push -u origin main`
 https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
 
-## 6. How to clone exising github repo to local
-`git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
-https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
 ## 6. how to use atom-git
 https://flight-manual.atom.io/using-atom/sections/github-package/
+## 7. How to clone exising github repo to local
+`git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
+#
+## 8. How to delete .DS_Store file and prevent to upload to github 
+https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
+
+1. delete .DS_Store file locally 
+`find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch`
+
+2. add .DS_Store file to .gitignore list (create .gitignore file if not exist)
+` echo .DS_Store >> .gitignore
+
+git add .gitignore`
+
+3. commit and push to github
+
+`git commit -m '.DS_Store banished!'
+
+git push origin main
+`
+
+## 9. Commend line push and fetch 
+fetch: 
+`git fetch`
+
+push:
+`git push -u origin main`
+
+
+
