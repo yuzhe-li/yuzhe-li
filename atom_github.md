@@ -52,14 +52,17 @@ https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cl
 https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
 
 1. delete .DS_Store file locally 
+
 `find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch`
 
 2. add .DS_Store file to .gitignore list (create .gitignore file if not exist)
-` echo .DS_Store >> .gitignore
+
+`echo .DS_Store >> .gitignore
 
 git add .gitignore`
 
 3. commit and push to github
+
 
 `git commit -m '.DS_Store banished!'
 
