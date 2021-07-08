@@ -51,18 +51,16 @@ https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cl
 ## 8. How to delete .DS_Store file and prevent to upload to github 
 https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
 
-- delete .DS_Store file locally 
-
+delete .DS_Store file locally :
 `find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch`
 
-- add .DS_Store file to .gitignore list (create .gitignore file if not exist)
+add .DS_Store file to .gitignore list (create .gitignore file if not exist):
 
 `echo .DS_Store >> .gitignore`
 
 `git add .gitignore`
 
-- commit and push to github
-
+commit and push to github:
 
 `git commit -m '.DS_Store banished!'`
 
