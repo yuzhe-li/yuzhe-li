@@ -74,4 +74,7 @@ push:
 `git push -u origin main`
 
 
+## 10. gitignore 
+echo '*.mat' >> .gitignore
 
+git rm --catched 
