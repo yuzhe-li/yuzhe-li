@@ -1,12 +1,7 @@
 
-# How to connect atom to github
-
+# How to connect to github
+# I. Setup the environment 
 ## 1. Setup ssh public/private key to github (Done)
-
-
-https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key/
-
-
 
 1. generate public/private key on each pc
 https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
@@ -34,21 +29,21 @@ Switching remote URLs from SSH to HTTPS
 
 https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-ssh-to-https
 
-## 5. How to add an exsting local folder to github repo
+# II. Connect local to github repo
+## 1. How to add an exsting local folder to github repo
 `git init -b main
 git add .
 git commit -m "First commit"
 git remote add origin  <REMOTE_URL>
 git push -u origin main`
 https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
-
-## 6. how to use atom-git
-https://flight-manual.atom.io/using-atom/sections/github-package/
-## 7. How to clone exising github repo to local
+## 2. How to clone exising github repo to local
 `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
-#
-## 8. How to delete .DS_Store file and prevent to upload to github 
+## 3. how to use atom-git
+https://flight-manual.atom.io/using-atom/sections/github-package/
+
+## 4. How to delete .DS_Store file and prevent to upload to github 
 https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
 
 delete .DS_Store file locally :
@@ -66,7 +61,8 @@ commit and push to github:
 
 `git push origin main`
 
-## 9. Commend line push and fetch 
+# III. Common command lines 
+## 1. Command line push and fetch 
 fetch: 
 `git fetch`
 
@@ -74,7 +70,10 @@ push:
 `git push -u origin main`
 
 
-## 10. gitignore 
+## 2. gitignore 
 echo '*.mat' >> .gitignore
 
 git rm --catched 
+
+
+# IV. Work with collaborators using fork
