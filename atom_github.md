@@ -40,10 +40,9 @@ https://docs.github.com/en/github/importing-your-projects-to-github/importing-so
 ## 2. How to clone exising github repo to local
 `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository
-## 3. how to use atom-git
-https://flight-manual.atom.io/using-atom/sections/github-package/
 
-## 4. How to delete .DS_Store file and prevent to upload to github 
+
+## 3. How to delete .DS_Store file and prevent to upload to github 
 https://stackoverflow.com/questions/107701/how-can-i-remove-ds-store-files-from-a-git-repository
 
 delete .DS_Store file locally :
@@ -60,6 +59,10 @@ commit and push to github:
 `git commit -m '.DS_Store banished!'`
 
 `git push origin main`
+
+
+## 4. how to use atom-git
+https://flight-manual.atom.io/using-atom/sections/github-package/
 
 # III. Common command lines 
 ## 1. Command line push and fetch 
