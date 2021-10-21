@@ -53,15 +53,18 @@ delete .DS_Store file locally :
 
 add .DS_Store file to .gitignore list (create .gitignore file if not exist):
 
-`echo .DS_Store >> .gitignore`
-
-`git add .gitignore`
+```
+echo .DS_Store >> .gitignore
+git add .gitignore
+```
 
 commit and push to github:
 
-`git commit -m '.DS_Store banished!'`
+```
+git commit -m '.DS_Store banished!'`
 
-`git push origin main`
+git push origin main
+```
 
 
 ## 4. how to use atom-git
