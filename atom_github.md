@@ -80,9 +80,10 @@ push:
 
 
 ## 2. gitignore 
+```
 echo '*.mat' >> .gitignore
-
 git rm --catched 
+```
 
 
 # IV. Work with collaborators using fork
