@@ -31,15 +31,14 @@ https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-
 
 # II. Connect local to github repo
 ## 1. How to add an exsting local folder to github repo
-```git init -b main
-
+```
+git init -b main
 git add .
-
 git commit -m "First commit"
-
 git remote add origin  <REMOTE_URL>
+git push -u origin main
+```
 
-git push -u origin main```
 https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
 ## 2. How to clone exising github repo to local
 `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
