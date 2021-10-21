@@ -31,6 +31,8 @@ https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-
 
 # II. Connect local to github repo
 ## 1. How to add an exsting local folder to github repo
+1. create an **empty** github repo on github website 
+2. on local folder: 
 ```
 git init -b main
 git add .
